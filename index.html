@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<h1 class="header">Calculator</h1>
+<div class="panel">
+  <button class="btn-number vertical-center" style="width: 60px;" onclick="full_Clear()" >CE</button>
+  <input id="input-number" type="text" >
+  <button class="btn-number vertical-center" style="width: 60px;" onclick="Clear()" >=</button>
+</div>
+<div class="panel">
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >7</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >8</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >9</button>
+  <button class="btn-number" onclick="AddNum(this.innerText)" >÷</button>
+</div>
+<div class="panel">
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >4</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >5</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >6</button>
+  <button class="btn-number" onclick="AddNum(this.innerText)" >×</button>
+</div>
+<div class="panel">
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >1</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >2</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >3</button>
+  <button class="btn-number" onclick="AddNum(this.innerText)" >-</button>
+</div>
+<div class="panel">
+  <button class="btn-number" style="width: 120px" onclick="SetNumber(this.innerText)" >0</button>
+  <button class="btn-number" onclick="SetNumber(this.innerText)" >.</button>
+  <button class="btn-number" onclick="AddNum(this.innerText)" += this.innerText" >+</button>
+</div>
+</body>
+<script src="js/main.js"></script>
+</html>
